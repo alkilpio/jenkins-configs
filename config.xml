@@ -1,0 +1,138 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson>
+  <disabledAdministrativeMonitors>
+    <string>hudson.diagnosis.ReverseProxySetupMonitor</string>
+  </disabledAdministrativeMonitors>
+  <version>2.265</version>
+  <installStateName>RUNNING</installStateName>
+  <numExecutors>2</numExecutors>
+  <mode>NORMAL</mode>
+  <useSecurity>true</useSecurity>
+  <authorizationStrategy class="hudson.security.GlobalMatrixAuthorizationStrategy">
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:alkilpio</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:kilpio</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:alkilpio</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:kilpio</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:alkilpio</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:kilpio</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:alkilpio</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:kilpio</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:alkilpio</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:kilpio</permission>
+    <permission>hudson.model.Computer.Build:alkilpio</permission>
+    <permission>hudson.model.Computer.Build:kilpio</permission>
+    <permission>hudson.model.Computer.Configure:alkilpio</permission>
+    <permission>hudson.model.Computer.Configure:kilpio</permission>
+    <permission>hudson.model.Computer.Connect:kilpio</permission>
+    <permission>hudson.model.Computer.Create:alkilpio</permission>
+    <permission>hudson.model.Computer.Create:kilpio</permission>
+    <permission>hudson.model.Computer.Delete:alkilpio</permission>
+    <permission>hudson.model.Computer.Disconnect:alkilpio</permission>
+    <permission>hudson.model.Computer.Disconnect:kilpio</permission>
+    <permission>hudson.model.Hudson.Administer:admin</permission>
+    <permission>hudson.model.Hudson.Administer:alxkilpio</permission>
+    <permission>hudson.model.Hudson.Read:alkilpio</permission>
+    <permission>hudson.model.Hudson.Read:kilpio</permission>
+    <permission>hudson.model.Item.Build:alkilpio</permission>
+    <permission>hudson.model.Item.Build:kilpio</permission>
+    <permission>hudson.model.Item.Cancel:alkilpio</permission>
+    <permission>hudson.model.Item.Cancel:kilpio</permission>
+    <permission>hudson.model.Item.Configure:alkilpio</permission>
+    <permission>hudson.model.Item.Configure:kilpio</permission>
+    <permission>hudson.model.Item.Create:alkilpio</permission>
+    <permission>hudson.model.Item.Create:kilpio</permission>
+    <permission>hudson.model.Item.Delete:alkilpio</permission>
+    <permission>hudson.model.Item.Discover:kilpio</permission>
+    <permission>hudson.model.Item.Move:alkilpio</permission>
+    <permission>hudson.model.Item.Read:alkilpio</permission>
+    <permission>hudson.model.Item.Read:kilpio</permission>
+    <permission>hudson.model.Item.Workspace:alkilpio</permission>
+    <permission>hudson.model.Item.Workspace:kilpio</permission>
+    <permission>hudson.model.Run.Delete:alkilpio</permission>
+    <permission>hudson.model.Run.Delete:kilpio</permission>
+    <permission>hudson.model.Run.Replay:kilpio</permission>
+    <permission>hudson.model.Run.Update:alkilpio</permission>
+    <permission>hudson.model.Run.Update:kilpio</permission>
+    <permission>hudson.model.View.Configure:alkilpio</permission>
+    <permission>hudson.model.View.Configure:kilpio</permission>
+    <permission>hudson.model.View.Create:alkilpio</permission>
+    <permission>hudson.model.View.Create:kilpio</permission>
+    <permission>hudson.model.View.Delete:alkilpio</permission>
+    <permission>hudson.model.View.Delete:kilpio</permission>
+    <permission>hudson.model.View.Read:alkilpio</permission>
+    <permission>hudson.model.View.Read:kilpio</permission>
+    <permission>hudson.scm.SCM.Tag:alkilpio</permission>
+    <permission>hudson.scm.SCM.Tag:kilpio</permission>
+    <permission>org.jenkins.plugins.lockableresources.LockableResourcesManager.Reserve:alkilpio</permission>
+    <permission>org.jenkins.plugins.lockableresources.LockableResourcesManager.Reserve:kilpio</permission>
+    <permission>org.jenkins.plugins.lockableresources.LockableResourcesManager.Unlock:alkilpio</permission>
+    <permission>org.jenkins.plugins.lockableresources.LockableResourcesManager.Unlock:kilpio</permission>
+    <permission>org.jenkins.plugins.lockableresources.LockableResourcesManager.View:alkilpio</permission>
+    <permission>org.jenkins.plugins.lockableresources.LockableResourcesManager.View:kilpio</permission>
+  </authorizationStrategy>
+  <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
+    <disableSignup>true</disableSignup>
+    <enableCaptcha>false</enableCaptcha>
+  </securityRealm>
+  <disableRememberMe>false</disableRememberMe>
+  <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
+  <workspaceDir>${JENKINS_HOME}/workspace/${ITEM_FULL_NAME}</workspaceDir>
+  <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
+  <markupFormatter class="hudson.markup.EscapedMarkupFormatter"/>
+  <jdks/>
+  <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
+  <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
+  <clouds/>
+  <quietPeriod>5</quietPeriod>
+  <scmCheckoutRetryCount>1</scmCheckoutRetryCount>
+  <views>
+    <hudson.model.AllView>
+      <owner class="hudson" reference="../../.."/>
+      <name>all</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+    </hudson.model.AllView>
+    <listView>
+      <owner class="hudson" reference="../../.."/>
+      <name>TheJob</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <jobNames>
+        <comparator class="hudson.util.CaseInsensitiveComparator"/>
+        <string>Jenkins_Multi_User_Credentials_Test</string>
+      </jobNames>
+      <jobFilters/>
+      <columns>
+        <hudson.views.StatusColumn/>
+        <hudson.views.WeatherColumn/>
+        <hudson.views.JobColumn/>
+        <hudson.views.LastSuccessColumn/>
+        <hudson.views.LastFailureColumn/>
+        <hudson.views.LastDurationColumn/>
+        <hudson.views.BuildButtonColumn/>
+      </columns>
+      <recurse>true</recurse>
+    </listView>
+  </views>
+  <primaryView>all</primaryView>
+  <slaveAgentPort>50000</slaveAgentPort>
+  <label></label>
+  <crumbIssuer class="hudson.security.csrf.DefaultCrumbIssuer">
+    <excludeClientIPFromCrumb>false</excludeClientIPFromCrumb>
+  </crumbIssuer>
+  <nodeProperties/>
+  <globalNodeProperties>
+    <hudson.tools.ToolLocationNodeProperty>
+      <locations>
+        <hudson.tools.ToolLocationNodeProperty_-ToolLocation>
+          <type>hudson.plugins.git.GitTool$DescriptorImpl</type>
+          <name>GIT</name>
+          <home>/usr/bin/git</home>
+        </hudson.tools.ToolLocationNodeProperty_-ToolLocation>
+      </locations>
+    </hudson.tools.ToolLocationNodeProperty>
+  </globalNodeProperties>
+  <noUsageStatistics>true</noUsageStatistics>
+</hudson>

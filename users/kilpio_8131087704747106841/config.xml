@@ -1,0 +1,79 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<user>
+  <version>10</version>
+  <id>kilpio</id>
+  <fullName>kilpio</fullName>
+  <description></description>
+  <properties>
+    <jenkins.security.ApiTokenProperty>
+      <tokenStore>
+        <tokenList/>
+      </tokenStore>
+    </jenkins.security.ApiTokenProperty>
+    <com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty plugin="credentials@2.3.13">
+      <domainCredentialsMap class="hudson.util.CopyOnWriteMap$Hash">
+        <entry>
+          <com.cloudbees.plugins.credentials.domains.Domain>
+            <specifications/>
+          </com.cloudbees.plugins.credentials.domains.Domain>
+          <java.util.concurrent.CopyOnWriteArrayList>
+            <com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey plugin="ssh-credentials@1.18.1">
+              <id>KilpioGitCertSSH</id>
+              <description>KilpioGitCertSSH</description>
+              <username>kilpio</username>
+              <passphrase>{AQAAABAAAAAQBjfxRKfIteAjvknrPFoyP7vxfqX/tJhRjGAQhWE8qcA=}</passphrase>
+              <privateKeySource class="com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey$DirectEntryPrivateKeySource">
+                <privateKey>{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}</privateKey>
+              </privateKeySource>
+            </com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey>
+          </java.util.concurrent.CopyOnWriteArrayList>
+        </entry>
+      </domainCredentialsMap>
+    </com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty>
+    <hudson.tasks.Mailer_-UserProperty plugin="mailer@1.32.1">
+      <emailAddress>kilpio@mail.ru</emailAddress>
+    </hudson.tasks.Mailer_-UserProperty>
+    <hudson.plugins.emailext.watching.EmailExtWatchAction_-UserProperty plugin="email-ext@2.79">
+      <triggers/>
+    </hudson.plugins.emailext.watching.EmailExtWatchAction_-UserProperty>
+    <jenkins.security.LastGrantedAuthoritiesProperty>
+      <roles>
+        <string>authenticated</string>
+      </roles>
+      <timestamp>1602765754524</timestamp>
+    </jenkins.security.LastGrantedAuthoritiesProperty>
+    <hudson.model.MyViewsProperty>
+      <primaryViewName></primaryViewName>
+      <views>
+        <hudson.model.AllView>
+          <owner class="hudson.model.MyViewsProperty" reference="../../.."/>
+          <name>all</name>
+          <filterExecutors>false</filterExecutors>
+          <filterQueue>false</filterQueue>
+          <properties class="hudson.model.View$PropertyList"/>
+        </hudson.model.AllView>
+      </views>
+    </hudson.model.MyViewsProperty>
+    <org.jenkinsci.plugins.displayurlapi.user.PreferredProviderUserProperty plugin="display-url-api@2.3.3">
+      <providerId>default</providerId>
+    </org.jenkinsci.plugins.displayurlapi.user.PreferredProviderUserProperty>
+    <hudson.model.PaneStatusProperties>
+      <collapsed/>
+    </hudson.model.PaneStatusProperties>
+    <hudson.security.HudsonPrivateSecurityRealm_-Details>
+      <passwordHash>#jbcrypt:$2a$10$WnCv7fpI13obe83kh9K/4.1/eVar6MudezuYqkRSCZFAM3nPQijqa</passwordHash>
+    </hudson.security.HudsonPrivateSecurityRealm_-Details>
+    <org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
+      <authorizedKeys></authorizedKeys>
+    </org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
+    <jenkins.security.seed.UserSeedProperty>
+      <seed>14b67b3f443d4ec8</seed>
+    </jenkins.security.seed.UserSeedProperty>
+    <hudson.search.UserSearchProperty>
+      <insensitiveSearch>true</insensitiveSearch>
+    </hudson.search.UserSearchProperty>
+    <hudson.model.TimeZoneProperty>
+      <timeZoneName></timeZoneName>
+    </hudson.model.TimeZoneProperty>
+  </properties>
+</user>
