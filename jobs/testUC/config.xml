@@ -33,7 +33,7 @@
   }
   stage(&apos;Deploy&apos;) {
     withCredentials([
-      // the credentialsId must match the credential name in the Pipeline properties parameters above
+      // the credentialsId test must match the credential name in the Pipeline properties parameters above
       usernameColonPassword(credentialsId: &apos;deployKey&apos;, variable: &apos;DEPLOY_KEY&apos;)
     ]) {
       cat &apos;curl -u &quot;$DEPLOY_KEY&quot; -XPOST https://webhooks.example.com/promote/&apos;
