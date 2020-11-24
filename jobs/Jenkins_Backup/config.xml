@@ -33,7 +33,7 @@ cd &quot;$JENKINS_HOME&quot;
 cd ~/plugins/
 gawk &apos;BEGIN     { RS = &quot;\r\n&quot; }
       BEGINFILE { n = v = &quot;&quot; }
-      ENDFILE   { printf &quot;curl -sS -L -O http://updates.jenkins-ci.org/download/plugins/%s/%s/%s.hpi\n&quot;, n, v, n }
+      ENDFILE   { printf &quot;curl -L -O http://updates.jenkins-ci.org/download/plugins/%s/%s/%s.hpi\n&quot;, n, v, n }
       $1 == &quot;Short-Name:&quot;     { n = $2 }
       $1 == &quot;Plugin-Version:&quot; { v = $2 }
     &apos; ./*/META-INF/MANIFEST.MF &gt; ./download_all_plugins.sh</command>
