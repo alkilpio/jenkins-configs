@@ -26,8 +26,17 @@ LANG=C git status | awk &apos;$1 == &quot;deleted:&quot; { print $2; }&apos; | x
 
 LANG=C git status | grep -q &apos;^nothing to commit&apos; || {
     git commit -m &quot;Automated Jenkins commit at $(date &apos;+%Y-%m-%d %H:%M&apos;)&quot;
-#    git push -q -u origin master
-}</command>
+    git push -q -u origin master
+}
+
+cd &quot;$JENKINS_HOME&quot;
+cd ~/plugins/
+gawk &apos;BEGIN     { RS = &quot;\r\n&quot; }
+      BEGINFILE { n = v = &quot;&quot; }
+      ENDFILE   { printf &quot;curl -sS -L -O http://updates.jenkins-ci.org/download/plugins/%s/%s/%s.hpi\n&quot;, n, v, n }
+      $1 == &quot;Short-Name:&quot;     { n = $2 }
+      $1 == &quot;Plugin-Version:&quot; { v = $2 }
+    &apos; ./*/META-INF/MANIFEST.MF &gt; ./download_all_plugins.sh</command>
       <configuredLocalRules/>
     </hudson.tasks.Shell>
   </builders>
